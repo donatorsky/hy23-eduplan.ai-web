@@ -47,7 +47,7 @@ import { LoaderComponent } from './loader/loader.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgPipesModule
+    NgPipesModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
