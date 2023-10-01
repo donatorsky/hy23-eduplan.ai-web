@@ -33,6 +33,6 @@ export class LoaderComponent {
       this.step.getQ6()
       ).subscribe(() => {setTimeout(() => {
         this.router.navigate(['profession-list']);
-    }, 500);})
+    }, 8500);})
   }
 }
