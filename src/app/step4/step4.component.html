@@ -1,0 +1,36 @@
+<app-header [step]="3"></app-header>
+<div class="container">
+    <app-step-title 
+    [header]="'Co sprawia Ci największą satysfakcję?'"
+    [description]="'Wybierz jedną opcje'"
+    ></app-step-title>
+
+    <div class="steps">
+        <label>
+            <input type="radio" name="radio" value="Kontakt z innymi ludźmi: długie rozmowy, wymiana doświadczeń i opinii, wspólna zabawa">
+            <div>Kontakt z innymi ludźmi: długie rozmowy, wymiana doświadczeń i opinii, wspólna zabawa</div>
+        </label>
+
+        <label>
+            <input type="radio" name="radio" value="Analizowanie danych, wyciąganie wniosków i tworzenie ciekawych rozwiązań">
+            <div>Analizowanie danych, wyciąganie wniosków i tworzenie ciekawych rozwiązań</div>
+        </label>
+
+        <label>
+            <input type="radio" name="radio" value="Zajęcia kreatywne: rysowanie, malowanie, komponowanie">
+            <div>Zajęcia kreatywne: rysowanie, malowanie, komponowanie</div>
+        </label>
+
+        <label>
+            <input type="radio" name="radio" value="Aktywność fizyczna: zwiedzanie, uprawianie sportu, wycieczki">
+            <div>Aktywność fizyczna: zwiedzanie, uprawianie sportu, wycieczki</div>
+        </label>
+
+        <label>
+            <input type="radio" name="radio" value="Poznawanie innych kultur, oglądanie filmów w różnych językach">
+            <div>Poznawanie innych kultur, oglądanie filmów w różnych językach</div>
+        </label>
+
+        <a [routerLink]="['/']" class="cta">Następny krok</a>
+    </div>
+</div>

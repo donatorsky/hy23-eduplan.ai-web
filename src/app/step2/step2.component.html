@@ -1,0 +1,36 @@
+<app-header [step]="2"></app-header>
+<div class="container">
+    <app-step-title 
+    [header]="'Jakie masz mocne strony?'"
+    [description]="'Wybierz wiele'"
+    ></app-step-title>
+
+    <div class="steps">
+        <label>
+            <input type="checkbox" name="checkbox" value="Kreatywność i myślenie przestrzenne">
+            <div>Kreatywność i myślenie przestrzenne</div>
+        </label>
+
+        <label>
+            <input type="checkbox" name="checkbox" value="Dobra pamięć i wnikliwość">
+            <div>Dobra pamięć i wnikliwość</div>
+        </label>
+
+        <label>
+            <input type="checkbox" name="checkbox" value="Swobodne wysławianie się i towarzyskość">
+            <div>Swobodne wysławianie się i towarzyskość</div>
+        </label>
+
+        <label>
+            <input type="checkbox" name="checkbox" value="Analityczne myślenie i rozwiązywanie problemów">
+            <div>Analityczne myślenie i rozwiązywanie problemów</div>
+        </label>
+
+        <label>
+            <input type="checkbox" name="checkbox" value="Empatia i zaangażowanie">
+            <div>Empatia i zaangażowanie</div>
+        </label>
+
+        <a [routerLink]="['/']" class="cta">Następny krok</a>
+    </div>
+</div>
