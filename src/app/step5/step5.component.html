@@ -1,0 +1,10 @@
+<app-header [step]="5"></app-header>
+<div class="container">
+    <app-step-title 
+    [header]="'Czym się najbardziej interesujesz?'"
+    [description]="'Wymień swoje hobby'"
+    ></app-step-title>
+
+    <textarea name="textarea"></textarea>
+    <a (click)="getDataAndGo()" class="cta">Następny krok</a>
+</div>

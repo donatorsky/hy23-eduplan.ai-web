@@ -1,36 +1,36 @@
-<app-header [step]="3"></app-header>
+<app-header [step]="4"></app-header>
 <div class="container">
     <app-step-title 
-    [header]="'Co sprawia Ci największą satysfakcję?'"
+    [header]="'W których dziedzinach czujesz się najlepiej?'"
     [description]="'Wybierz jedną opcje'"
     ></app-step-title>
 
     <div class="steps">
         <label>
-            <input type="radio" name="radio" value="Kontakt z innymi ludźmi: długie rozmowy, wymiana doświadczeń i opinii, wspólna zabawa">
-            <div>Kontakt z innymi ludźmi: długie rozmowy, wymiana doświadczeń i opinii, wspólna zabawa</div>
+            <input type="radio" name="radio" value="Matematyka lub informatyka">
+            <div>Matematyka lub informatyka</div>
         </label>
 
         <label>
-            <input type="radio" name="radio" value="Analizowanie danych, wyciąganie wniosków i tworzenie ciekawych rozwiązań">
-            <div>Analizowanie danych, wyciąganie wniosków i tworzenie ciekawych rozwiązań</div>
+            <input type="radio" name="radio" value="Język polski lub historia sztuki">
+            <div>Język polski lub historia sztuki</div>
         </label>
 
         <label>
-            <input type="radio" name="radio" value="Zajęcia kreatywne: rysowanie, malowanie, komponowanie">
-            <div>Zajęcia kreatywne: rysowanie, malowanie, komponowanie</div>
+            <input type="radio" name="radio" value="Język angielski lub inny">
+            <div>Język angielski lub inny</div>
         </label>
 
         <label>
-            <input type="radio" name="radio" value="Aktywność fizyczna: zwiedzanie, uprawianie sportu, wycieczki">
-            <div>Aktywność fizyczna: zwiedzanie, uprawianie sportu, wycieczki</div>
+            <input type="radio" name="radio" value="Historia, filozofia lub Wiedza o Społeczeństwie">
+            <div>Historia, filozofia lub Wiedza o Społeczeństwie</div>
         </label>
 
         <label>
-            <input type="radio" name="radio" value="Poznawanie innych kultur, oglądanie filmów w różnych językach">
-            <div>Poznawanie innych kultur, oglądanie filmów w różnych językach</div>
+            <input type="radio" name="radio" value="Chemia lub biologia">
+            <div>Chemia lub biologia</div>
         </label>
 
-        <a [routerLink]="['/']" class="cta">Następny krok</a>
+        <a class="cta" (click)="getDataAndGo()">Następny krok</a>
     </div>
 </div>
