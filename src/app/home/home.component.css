@@ -21,13 +21,13 @@
 }
 
 .home .first {
-    background-image: url("/assets/pytajnik.svg");
+    background-image: url("https://svgur.com/i/y5W.svg");
     background-repeat: no-repeat;
     background-position: 0 center;
 }
 
 .home .second {
-    background-image: url("/assets/waliza.svg");
+    background-image: url("https://svgur.com/i/y6L.svg");
     background-repeat: no-repeat;
     background-position: 0 center;
 }
