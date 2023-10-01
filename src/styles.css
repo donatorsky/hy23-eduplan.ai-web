@@ -53,7 +53,7 @@
     bottom: 10px;
 }
 
-.steps input[type=checkbox] {
+.steps input[type=checkbox], .steps input[type=radio] {
     display: none;
 }
 

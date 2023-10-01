@@ -1,14 +1,15 @@
-<app-header [text]="'Ścieka kariery'"></app-header>
+<app-header [text]="'Ścieka kariery'" [close]=false></app-header>
 <div class="container">
     <h2>Ścieka kariery: Analityk danych</h2>
     <ul class="path">
-        <li *ngFor="let x of [].constructor(11); index as i">
-            <div class="number">{{i}}</div>
-            <div class="line"></div>
+        <li *ngFor="let x of [].constructor(11); index as i;  let last = last">
+            <div class="number">{{i+1}}</div>
+            <div class="line" *ngIf="!last"></div>
             <div class="description">
                 Uczestnicz w różnorodnych zadaniach i projektach, aby rozwijać umiejętności i zdobywać doświadczenie.
                 <br><br>
             </div>
         </li>
     </ul>
+    <a href="#" class="cta cta-empty">Wróć do opisu zawodu</a>
 </div>

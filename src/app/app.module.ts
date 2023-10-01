@@ -10,6 +10,12 @@ import { StepTitleComponent } from './ui/step-title/step-title.component';
 import { ProfessionComponent } from './profession/profession.component';
 import { ProfessionListComponent } from './profession-list/profession-list.component';
 import { CareerPathComponent } from './career-path/career-path.component';
+import { CoursesComponent } from './courses/courses.component';
+import { UniversitiesComponent } from './universities/universities.component';
+import { Step1Component } from './step1/step1.component';
+import { Step2Component } from './step2/step2.component';
+import { Step3Component } from './step3/step3.component';
+import { Step4Component } from './step4/step4.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +27,12 @@ import { CareerPathComponent } from './career-path/career-path.component';
     ProfessionComponent,
     ProfessionListComponent,
     CareerPathComponent,
+    CoursesComponent,
+    UniversitiesComponent,
+    Step1Component,
+    Step2Component,
+    Step3Component,
+    Step4Component,
   ],
   imports: [
     BrowserModule,
