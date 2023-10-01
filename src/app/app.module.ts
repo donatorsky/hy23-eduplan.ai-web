@@ -19,6 +19,7 @@ import { Step3Component } from './step3/step3.component';
 import { Step4Component } from './step4/step4.component';
 import { Step5Component } from './step5/step5.component';
 import { Step6Component } from './step6/step6.component';
+import { LoaderComponent } from './loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { Step6Component } from './step6/step6.component';
     Step4Component,
     Step5Component,
     Step6Component,
+    LoaderComponent,
   ],
   imports: [
     BrowserModule,

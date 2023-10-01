@@ -1,0 +1,82 @@
+.loader {
+    margin-top: 220px;
+}
+
+.loader h2 {
+    text-align: center;
+}
+
+.loader span {
+    color: #767587;
+    border-radius: 16px;
+    font-family: 'Manrope';
+    text-align: center;
+    display: block;
+}
+
+.loader .bar {
+    background: #D9D8DB;
+    border-radius: 4px;
+    height: 4px;
+    width: 80%;
+    margin: 25px auto 20px auto;
+}
+
+.loader .in {
+    animation: fill 10s linear 1;
+    height: 100%;
+    background-color: #446EDA;
+    border-radius: 4px;
+}
+
+@keyframes fill {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+}
+
+.loader ul {
+    border-radius: 16px;
+    font-family: 'Manrope';
+    margin-left: 40px;
+}
+
+.loader li {
+    padding: 10px 0 10px 26px;
+    background-image: url("/assets/check.svg");
+    background-repeat: no-repeat;
+    list-style: none;
+    background-position: 0 11px;
+    animation-name: show;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.loader li:nth-child(2) {
+    animation-delay: 1s;
+
+}.loader li:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.loader li:nth-child(3) {
+    animation-delay: 5s;
+}
+
+.loader li:nth-child(4) {
+    animation-delay: 7s;
+}
+
+@keyframes show {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
