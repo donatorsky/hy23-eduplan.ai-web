@@ -21,11 +21,9 @@ export class UniversitiesComponent implements OnInit {
     })
 
     setTimeout(() => {
-      console.log("Delayed for 2.5 second.");
+      this.universities = this.university.getUniversitiesBySpecialization(this.name)
     }, 2500);
     
-
-    this.universities = this.university.getUniversitiesBySpecialization(this.name)
   }
 
   goBack() {
