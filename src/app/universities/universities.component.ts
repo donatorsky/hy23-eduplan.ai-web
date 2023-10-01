@@ -21,7 +21,7 @@ export class UniversitiesComponent implements OnInit {
     })
 
     setTimeout(() => {
-      this.universities = this.university.getUniversitiesBySpecialization(this.name)
+      this.universities = this.university.getUniversitiesBySpecialization(decodeURIComponent(this.name))
     }, 2500);
     
   }
