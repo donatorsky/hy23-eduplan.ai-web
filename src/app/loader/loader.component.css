@@ -23,7 +23,7 @@
 }
 
 .loader .in {
-    animation: fill 10s linear 1;
+    animation: fill 20s linear 1;
     height: 100%;
     background-color: #446EDA;
     border-radius: 4px;

@@ -1,6 +1,6 @@
 <app-header [text]="'Proponowane kierunki'" [close]=false></app-header>
 <div class="container">
-    <a [routerLink]="['/universities', course]" class="course-tile" *ngFor="let course of specializations">
+    <a [routerLink]="['/universities', encode(course)]" class="course-tile" *ngFor="let course of specializations">
         {{course}}
     </a>
     <a [routerLink]="['/profession', id]" class="cta cta-empty">Wróć do opisu zawodu</a>

@@ -21,4 +21,8 @@ export class CoursesComponent implements OnInit {
 
     this.specializations = this.suggestion.getById(this.id || 0).specializations
   }
+
+  encode(x: string): string {
+    return encodeURIComponent(x)
+  }
 }
