@@ -16,7 +16,7 @@ import { LoaderComponent } from './loader/loader.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'profession', component: ProfessionComponent },
+  { path: 'profession/:id', component: ProfessionComponent },
   { path: 'profession-list', component: ProfessionListComponent },
   { path: 'career-path', component: CareerPathComponent },
   { path: 'courses', component: CoursesComponent },

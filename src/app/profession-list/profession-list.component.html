@@ -2,20 +2,20 @@
 <div class="container">
     <h2>Wybrane dla Ciebie</h2>
 
-    <div class="profession-tile" *ngFor="let x of [].constructor(3)">
+    <div class="profession-tile" *ngFor="let item of professions">
         <div class="img" style="background-image: url(https://picsum.photos/400);">
             <div class="apla"></div>
             <div class="content">
                 <div class="profession-name">
-                    Analityk
+                    {{item.name}}
                 </div>
                 <div class="matching">
-                    Dopasowanie: 87%
+                    Dopasowanie: {{getRandomArbitrary(70,88).toFixed(0)}}%
                 </div>
             </div>
         </div>
-        <p>Analityk danych specjalizuje się w pozyskiwaniu, analizowaniu i interpretowaniu danych, aby wspierać decyzje biznesowe. Korzysta z narzędzi statystycznych...</p>
-        <a href="#" class="cta50">Zobacz szczegóły</a>
+        <p>{{item.description| shorten: 100: '...'}}</p>
+        <a [routerLink]="['/profession', item.id]" class="cta50">Zobacz szczegóły</a>
     </div>
 
     <a href="#" class="cta cta-empty">Wypełnij quiz od nowa</a>
