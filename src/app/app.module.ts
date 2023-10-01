@@ -22,6 +22,7 @@ import { Step4Component } from './step4/step4.component';
 import { Step5Component } from './step5/step5.component';
 import { Step6Component } from './step6/step6.component';
 import { LoaderComponent } from './loader/loader.component';
+import { UniversitiesService } from './universities.service';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,9 @@ import { LoaderComponent } from './loader/loader.component';
     HttpClientModule,
     NgPipesModule,
   ],
-  providers: [],
+  providers: [UniversitiesService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  constructor(private university: UniversitiesService) {}
+}

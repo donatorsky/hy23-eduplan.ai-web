@@ -1,11 +1,26 @@
-.course-tile {
+.university-tile {
     position: relative;
     border: 2px solid #D9D8DB;
     border-radius: 16px;
-    padding: 10px 15px 55px 15px;
+    padding: 20px 65px 20px 15px;
     position: relative;
     margin: 15px 0;
     font-family: 'Manrope';
     font-size: 20px;
     font-weight: 500;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    background-image: url("/assets/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 305px center;
+}
+
+.university-tile span{
+    display: block;
+    font-family: 'Manrope';
+    font-size: 14px;
+    color: #767587;
+    margin-top: 18px;
 }

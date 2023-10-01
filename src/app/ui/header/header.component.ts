@@ -13,6 +13,7 @@ export class HeaderComponent {
   @Input() step: number;
   @Input() text: string;
   @Input() close: boolean = true;
+  @Input() back: boolean = true;
 
   goBack() {
     this.location.back();

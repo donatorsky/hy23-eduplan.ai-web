@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 
-interface University {
+export interface University {
   id: number
   name: string
   link: string
@@ -9,7 +9,7 @@ interface University {
   city: string
 }
 
-interface Specialization {
+export interface Specialization {
   id: number
   university_id: number
   name: string
@@ -25,8 +25,8 @@ interface Specialization {
 })
 export class UniversitiesService {
 
-  private universities: University[];
-  private specializations: Specialization[];
+  private universities: University[] = [];
+  private specializations: Specialization[] = [];
 
   constructor(private http: HttpClient) {
     this.http.get<University[]>('./assets/universities.json')

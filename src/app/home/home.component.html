@@ -1,31 +1,16 @@
-<app-header [step]="1"></app-header>
+<app-header [text]="'EduPlan.AI'" [back]=false [close]=false></app-header>
 <div class="container">
-    <app-step-title 
-    [header]="'Które opisy osobowości najlepiej do Ciebie pasują?'"
-    [description]="'Wybierz wiele'"
-    ></app-step-title>
-
-    <div class="steps">
-        <label>
-            <input type="checkbox">
-            <div>Lubisz nowe wyzwania i możliwości, cenisz sobie niezależność</div>
-        </label>
-
-        <label>
-            <input type="checkbox">
-            <div>Dążysz do aprobaty otoczenia, prestiżu i oczekujesz zaufania ze strony innych</div>
-        </label>
-
-        <label>
-            <input type="checkbox">
-            <div>Nie odpowiadają Ci częste zmiany, wolisz poczucie bezpieczeństwa i stabilizację</div>
-        </label>
-
-        <label>
-            <input type="checkbox">
-            <div>Dbasz o szczegóły, stawiasz na jakość i ciągłe rozwijanie swoich kompetencji</div>
-        </label>
-
-        <a [routerLink]="['/']" class="cta">Następny krok</a>
+    <div class="home">
+        <img src="/assets/home.gif" alt="">
+        <h2>Odkryj swój plan na przyszłość</h2>
+        <div class="first">
+            Odpowiedz na kilka pytań
+            <span>Chcemy lepiej poznać Twoje cele i aspiracje.</span>
+        </div>
+        <div class="second">
+            Znajdź ścieżkę kariery dla siebie
+            <span>System przygotuje spersonalizowane plany dostosowane do Twoich zainteresowań.</span>
+        </div>
     </div>
+    <a [routerLink]="['/step1']" class="cta">Rozpocznij quiz</a>
 </div>
