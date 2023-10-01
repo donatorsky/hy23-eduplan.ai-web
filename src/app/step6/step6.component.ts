@@ -26,7 +26,7 @@ export class Step6Component {
       alert("Powiedz nam o sobie trochę więcej");
     } else {
         this.service.setQ6(value)
-        // this.router.navigate(['/step6'])
+        this.router.navigate(['/loader'])
     }
   }
 }
