@@ -19,6 +19,10 @@ export class UniversitiesComponent implements OnInit {
     this.route.paramMap.subscribe((params: ParamMap) => {
       this.name = params.get('name') || ''
     })
+
+    setTimeout(() => {
+      console.log("Delayed for 2.5 second.");
+    }, 2500);
     
 
     this.universities = this.university.getUniversitiesBySpecialization(this.name)
