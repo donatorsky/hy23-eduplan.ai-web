@@ -1,1 +1,90 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 342px;
+    margin: 0 auto;
+}
+
+.cta {
+    background: #446EDA;
+    font-family: 'Manrope';
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 22px;
+    box-sizing: border-box;
+    border-radius: 32px;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.cta-disabled {
+    background-color: #BECDF5;
+}
+
+.cta-empty {
+    color: #446EDA;
+    background: #fff;
+    border: 2px solid #446EDA;
+}
+
+.cta50 {
+    background: #EEF2FF;
+    font-family: 'Manrope';
+    font-size: 14px;
+    color: #446EDA;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border-radius: 32px;
+    font-weight: 700;
+    margin: 7px 0 0 0;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.steps input[type=checkbox] {
+    display: none;
+}
+
+.steps div {
+    display: inline-block;
+    width: 100%;
+    border: 2px solid #D9D8DB;
+    border-radius: 12px;
+    padding: 15px 15px;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+    font-family: 'Manrope';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.steps :checked + div {
+    border-color: #446EDA;
+}
+
+h2 {
+    font-family: 'Manrope';
+    font-weight: 700;
+    font-size: 30px;
+    padding: 0 0 10px 0;
+}
+
+p {
+    font-family: 'Manrope';
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 25px;
+}

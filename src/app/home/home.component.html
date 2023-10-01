@@ -1,0 +1,31 @@
+<app-header [step]="1"></app-header>
+<div class="container">
+    <app-step-title 
+    [header]="'Które opisy osobowości najlepiej do Ciebie pasują?'"
+    [description]="'Wybierz wiele'"
+    ></app-step-title>
+
+    <div class="steps">
+        <label>
+            <input type="checkbox">
+            <div>Lubisz nowe wyzwania i możliwości, cenisz sobie niezależność</div>
+        </label>
+
+        <label>
+            <input type="checkbox">
+            <div>Dążysz do aprobaty otoczenia, prestiżu i oczekujesz zaufania ze strony innych</div>
+        </label>
+
+        <label>
+            <input type="checkbox">
+            <div>Nie odpowiadają Ci częste zmiany, wolisz poczucie bezpieczeństwa i stabilizację</div>
+        </label>
+
+        <label>
+            <input type="checkbox">
+            <div>Dbasz o szczegóły, stawiasz na jakość i ciągłe rozwijanie swoich kompetencji</div>
+        </label>
+
+        <a [routerLink]="['/']" class="cta">Następny krok</a>
+    </div>
+</div>

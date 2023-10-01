@@ -1,0 +1,43 @@
+.path {
+    font-family: 'Manrope';
+    font-size: 14px;
+    line-height: 22px;
+    list-style: none;
+}
+
+.path li {
+    position: relative;
+    overflow: hidden;
+}
+
+.path li .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background: #EEF2FF;
+    color: #446EDA;
+    border-radius: 20px;
+    font-family: 'Manrope';
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 9px;
+}
+
+.path .line {
+    float: left;
+    width: 20px;
+    background-color: grey;
+    padding-bottom: 100%;
+    margin-bottom: -100%;
+}
+
+.path .description {
+    float: right;
+    width: 285px;
+    padding-bottom: 100%;
+    margin-bottom: -100%;
+}

@@ -1,0 +1,43 @@
+header {
+    margin: 24px 0 24px 0;
+    border-bottom: 1px solid #D9D8DB;
+    padding-bottom: 20px;
+    height: 25px;
+}
+
+header .container {
+    position: relative;
+}
+
+header app-progressbar {
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+    padding: 7px 0 0 0;
+}
+
+
+header .text {
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Manrope';
+    font-size: 16px;
+    font-weight: 700;
+}
+
+header a {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+}
+
+header .back {
+    top: 0;
+}
+
+header .close {
+    right: 0;
+    top: 2px;
+}
